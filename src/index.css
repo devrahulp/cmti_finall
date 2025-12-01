@@ -1,0 +1,8 @@
+@import "./styles/variables.css";
+@import "./styles/theme.css";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
