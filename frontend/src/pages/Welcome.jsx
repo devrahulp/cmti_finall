@@ -3,12 +3,10 @@ import "../styles/Welcome.css";
 
 import CMTILogo from "../assets/images/CMTILogo.jpg";
 import DocAILogo from "../assets/images/docai.jpeg";
-import finalbg from "../assets/images/finalbg.jpg";
-import downloadbg from "../assets/images/download.jpg";
+import background from "../assets/images/bg.jpg";
+import download from "../assets/images/download.jpg";
 
-
-
-export default function App() {
+export default function Welcome() {
   const [showCards, setShowCards] = useState(false);
 
   const handleExplore = () => {
@@ -20,6 +18,7 @@ export default function App() {
 
   return (
     <div className="app-container">
+
       {/* HEADER */}
       <header className="header">
         <div className="header-left">
@@ -27,48 +26,41 @@ export default function App() {
         </div>
         <div className="header-right">
           <img src={CMTILogo} alt="CMTI Logo" className="header-logo" />
+        
         </div>
       </header>
 
       {/* MAIN BLUR CARD */}
-      <div
-        className="blur-card"
-        style={{ backgroundImage: `url(${finalbg})` }}
-      >
+      <div className="main-card">
         <h1 className="welcome">WELCOME TO</h1>
         <h1 className="docai">Doc.ai</h1>
-
         <p className="subtitle">
           Transforming handwritten documents into accurate, searchable,<br />
           and intelligent digital content.
         </p>
-
         <button className="explore-btn" onClick={handleExplore}>
           Explore
         </button>
       </div>
 
-      {/* POP-UP CARDS */}
+      {/* INFO CARDS */}
       {showCards && (
         <>
           <div className="cards-section">
             <div className="info-card">
-              Doc.AI simplifies workflows by digitizing handwritten notes and
-              extracting meaningful content.
+              Doc.AI simplifies workflows by digitizing handwritten notes and extracting meaningful content.
             </div>
 
             <div className="info-card">
-              This platform transforms documents into clean, searchable text for
-              improved understanding and organization.
+              This platform transforms documents into clean, searchable text for improved understanding and organization.
             </div>
 
             <div className="info-card">
-              With accurate AI-powered processing, document handling becomes faster
-              and more reliable than ever.
+              With accurate AI-powered processing, document handling becomes faster and more reliable than ever.
             </div>
           </div>
 
-          {/* TRY NOW BELOW CARDS */}
+          {/* TRY NOW BUTTON */}
           <div className="try-lower-wrapper">
             <button
               className="try-lower-btn"
