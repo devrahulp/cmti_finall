@@ -27,7 +27,7 @@ function LoginPage() {
             Name
             <input
               type="text"
-              placeholder="chirag"
+              placeholder="saimonika"
               value={name}
               onChange={(e) => setName(e.target.value)}
               required
@@ -37,7 +37,7 @@ function LoginPage() {
             Email (optional)
             <input
               type="email"
-              placeholder="chirag@kirankumari.com"
+              placeholder="saimonika.com"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
