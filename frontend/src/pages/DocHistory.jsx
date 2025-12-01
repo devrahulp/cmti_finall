@@ -1,7 +1,7 @@
 function DocHistory() {
   return (
     <div>
-      <h1>Convert Page</h1>
+      <h1>Dochistory</h1>
     </div>
   );
 }

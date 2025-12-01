@@ -1,7 +1,7 @@
 function LoginPage() {
   return (
     <div>
-      <h1>Convert Page</h1>
+      <h1>Login page</h1>
     </div>
   );
 }

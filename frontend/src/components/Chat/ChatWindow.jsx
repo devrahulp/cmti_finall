@@ -32,14 +32,14 @@ function ChatWindow() {
       <header className="chat-header">
         <div>
           <h2>{activeConversation.title || "New chat"}</h2>
-          <p>Upload documents, JPEGs and ask questions just like ChatGPT.</p>
+          <p>Upload documents, JPEGs to ask questions </p>
         </div>
       </header>
 
       <div className="chat-messages">
         {activeConversation.messages.length === 0 && (
           <div className="chat-placeholder">
-            <p>Ask a question or describe a task to get started.</p>
+            <p>Upload a file to get started.</p>
           </div>
         )}
 
@@ -70,10 +70,6 @@ function ChatWindow() {
           isSending={isSending}
           canSend={!!input.trim() || files.length > 0}
         />
-        <p className="chat-disclaimer">
-          This is a frontend clone. Connect <code>sendMessageToBackend()</code> to
-          your own API in <code>src/api/chatApi.js</code>.
-        </p>
       </footer>
     </div>
   );

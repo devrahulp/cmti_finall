@@ -42,7 +42,7 @@ function ChatInput({
       <textarea
         className="chat-input"
         rows={1}
-        placeholder="Message ChatGPT…"
+        placeholder="Prompt......"
         value={value}
         onChange={(e) => onChange(e.target.value)}
       />
